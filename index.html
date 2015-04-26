@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en" ng-app="myapp">
+<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.0-beta.19/angular.min.js"></script>
+    <script src="https://cdn.firebase.com/js/client/1.0.21/firebase.js"></script>
+    <script src="https://cdn.firebase.com/libs/angularfire/0.8.2/angularfire.min.js"></script>
+        <script src="facebook.js"></script>
+	<script src="controller.js"></script>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<h2>FB Picture</h2>
+	<div ng-controller="myCtrl">
+<img src="{{imageURL}}" /> <br />
+<label>Facebook UserName</label><input ng-model="username"></input> <br />
+<button ng-click="getPicture()">Get FB Picture</input> <br />
+
+</div>
+
+</body>
+</html>
+
